@@ -1,0 +1,31 @@
+
+export const CLOCK_OFFSETS = [
+  77,  
+  52,  
+  118, 
+  35,  
+  56,  
+  57,  
+  76,  
+  116, 
+  33,  
+  113, 
+  83,  
+  54,  
+  89,  
+  92   
+];
+
+export const SYSTEM_ERRORS = [
+  "KERNEL_PANIC: VECTOR_0x0F NOT FOUND",
+  "MEMORY_DUMP_INITIATED...",
+  "SEGMENTATION_FAULT AT 0x00045A",
+  "DRIVER_IRQL_NOT_LESS_OR_EQUAL",
+  "FILESYSTEM CORRUPTION: SECTOR 7G",
+  "CONNECTION_REFUSED: PORT 22",
+  "STACK_OVERFLOW IN THREAD 'MAIN'",
+  "CACHE_MISS: L2",
+  "UNKNOWN O P C O D E",
+  "SYSTEM HALTED",
+  "REBOOTING..."
+];

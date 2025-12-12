@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SYSTEM_FAILURE</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <style>
+      body {
+        margin: 0;
+        background-color: #000;
+        color: #33ff00;
+        font-family: 'VT323', monospace;
+        overflow: hidden;
+      }
+      
+      /* CRT Effects */
+      .crt::before {
+        content: " ";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+        z-index: 50;
+        background-size: 100% 2px, 3px 100%;
+        pointer-events: none;
+      }
+      
+      .crt::after {
+        content: " ";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background: rgba(18, 16, 16, 0.1);
+        opacity: 0;
+        z-index: 50;
+        pointer-events: none;
+        animation: flicker 0.15s infinite;
+      }
+
+      @keyframes flicker {
+        0% { opacity: 0.027951; }
+        5% { opacity: 0.044169; }
+        10% { opacity: 0.023271; }
+        15% { opacity: 0.096414; }
+        20% { opacity: 0.038479; }
+        25% { opacity: 0.089452; }
+        30% { opacity: 0.012431; }
+        35% { opacity: 0.062039; }
+        40% { opacity: 0.057393; }
+        45% { opacity: 0.009401; }
+        50% { opacity: 0.063705; }
+        55% { opacity: 0.040266; }
+        60% { opacity: 0.083163; }
+        65% { opacity: 0.03813; }
+        70% { opacity: 0.012214; }
+        75% { opacity: 0.063994; }
+        80% { opacity: 0.003986; }
+        85% { opacity: 0.038198; }
+        90% { opacity: 0.05303; }
+        95% { opacity: 0.030589; }
+        100% { opacity: 0.059293; }
+      }
+
+      .text-glow {
+        text-shadow: 0 0 5px #33ff00, 0 0 10px #33ff00;
+      }
+      
+      .cursor-blink {
+        animation: blink 1s step-end infinite;
+      }
+      
+      @keyframes blink {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0; }
+      }
+      
+      /* Scrollbar hiding */
+      ::-webkit-scrollbar {
+          width: 0px;
+          background: transparent;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.561.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
