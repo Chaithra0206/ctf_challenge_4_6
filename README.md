@@ -2,7 +2,7 @@
 
 ## 🧠 Hint
 
-> **“Only when the compass stops whispering its secret numbers will the buried path make sense.”**
+> **“Only when the books whisper their secrets and the clock ticks in harmony will the veil lift.”**
 
 ---
 
